@@ -1,0 +1,57 @@
+{
+  "name": "demo-vertx-react-vitejs",
+  "version": "1.0.0",
+  "description": "Demo Vertx React",
+  "homepage": "https://github.com/ccreusat/demo-vertx-react-vitejs#readme",
+  "bugs": {
+    "url": "https://github.com/ccreusat/demo-vertx-react-vitejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccreusat/demo-vertx-react-vitejs.git"
+  },
+  "license": "MIT",
+  "author": "ccreusat",
+  "scripts": {
+    "build": "tsc && vite build",
+    "clean": "concurrently \"yarn:clean:*\"",
+    "clean:dist": "rm -rf dist",
+    "clean:lighthouse": "rm -rf .lighthouseci",
+    "clean:modules": "rm -rf node_modules",
+    "clean:package": "rm -rf yarn.lock",
+    "dev": "vite",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "pre-commit": "lint-staged",
+    "pretty": "concurrently \"yarn:pretty:*\"",
+    "pretty:check": "yarn prettier --check .",
+    "pretty:write": "yarn prettier --write .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.23",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "5.38.1",
+    "@typescript-eslint/parser": "5.38.1",
+    "@vitejs/plugin-react": "2.1.0",
+    "concurrently": "7.4.0",
+    "eslint": "8.24.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.8",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "typescript": "4.8.3",
+    "vite": "3.1.3"
+  }
+}
